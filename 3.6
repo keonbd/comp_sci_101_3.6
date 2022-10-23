@@ -1,0 +1,14 @@
+humans = 7347000000  # Population of the human race.
+vampires = 1
+i = 0
+# Create solution here
+weeks = int(input('How many weeks? :\n'))
+print()
+for i in range(weeks):
+    i += 1
+    vampires = vampires * 2
+    humans -= vampires
+    if vampires > humans:
+        i += 1
+        print('The human population was destroyed after just',i,'weeks.')
+print(f'The earth has',vampires,'vampires after', i,'weeks.')
